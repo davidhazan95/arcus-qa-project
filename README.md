@@ -28,6 +28,6 @@ It was used so I wouldn't need to worry with configuration as much as with the t
 * If you use Windows, add python in your PATHs if needed
 * After Installing Python, write *"pip install -U behave"* on the terminal 
 * Again, if you use Windows, add the behave folder in your PATHs if needed
-* Now, just enter in the project folder inside the terminal and write *"behave"*
+* Now, inside the terminal, go to the root folder of the project and just type *"behave"*!
 
 Done, this should make you run the tests developed in this project!
