@@ -12,11 +12,11 @@ Feature: Validating the Creation and Formatting of the JSON generated
 
    Examples: Invalid Paths
     | invalid_path  | 
-    |//Test/Test    |
-    |/Test//Test    |
+    |//Test@Test    |
+    |/Test/!Test    |
     |\Test\Test     |
     |Test/Test      |
-    |/Test/Test//   |
+    |/Test/Test./   |
     |/Test\Test     |
     |\Test/Test     |
     |Test           |
@@ -28,10 +28,10 @@ Feature: Validating the Creation and Formatting of the JSON generated
   
    Examples: Empty Fields
     | vendor  | url                                                                           | series                            | category  | model                     | path                                                               | release  | field   |
-    | ""      |https://www.cisco.com/c/en/us/support/routers/910-industrial-router/model.html |Cisco 900 Series Industrial Routers|Routers    |Cisco 910 Industrial Router|/Support/Product Support/Routers/Cisco 900 Series Industrial Routers|1404766800|Vendor   |
-    |cisco.com| ""                                                                            |Cisco 900 Series Industrial Routers|Routers    |Cisco 910 Industrial Router|/Support/Product Support/Routers/Cisco 900 Series Industrial Routers|1404766800|URL      |
-    |cisco.com|https://www.cisco.com/c/en/us/support/routers/910-industrial-router/model.html |   ""                              |Routers    |Cisco 910 Industrial Router|/Support/Product Support/Routers/Cisco 900 Series Industrial Routers|1404766800|Series   |
-    |cisco.com|https://www.cisco.com/c/en/us/support/routers/910-industrial-router/model.html |Cisco 900 Series Industrial Routers|   ""      |Cisco 910 Industrial Router|/Support/Product Support/Routers/Cisco 900 Series Industrial Routers|1404766800|Category |
-    |cisco.com|https://www.cisco.com/c/en/us/support/routers/910-industrial-router/model.html |Cisco 900 Series Industrial Routers|Routers    |   ""                      |/Support/Product Support/Routers/Cisco 900 Series Industrial Routers|1404766800|Model    |
-    |cisco.com|https://www.cisco.com/c/en/us/support/routers/910-industrial-router/model.html |Cisco 900 Series Industrial Routers|Routers    |Cisco 910 Industrial Router|  ""                                                                |1404766800|Path     |
-    |cisco.com|https://www.cisco.com/c/en/us/support/routers/910-industrial-router/model.html |Cisco 900 Series Industrial Routers|Routers    |Cisco 910 Industrial Router|/Support/Product Support/Routers/Cisco 900 Series Industrial Routers|   ""     |Release  |
+    | null    |https://www.cisco.com/c/en/us/support/routers/910-industrial-router/model.html |Cisco 900 Series Industrial Routers|Routers    |Cisco 910 Industrial Router|/Support/Product Support/Routers/Cisco 900 Series Industrial Routers|1404766800|vendor   |
+    |cisco.com| null                                                                          |Cisco 900 Series Industrial Routers|Routers    |Cisco 910 Industrial Router|/Support/Product Support/Routers/Cisco 900 Series Industrial Routers|1404766800|url      |
+    |cisco.com|https://www.cisco.com/c/en/us/support/routers/910-industrial-router/model.html |   null                            |Routers    |Cisco 910 Industrial Router|/Support/Product Support/Routers/Cisco 900 Series Industrial Routers|1404766800|series   |
+    |cisco.com|https://www.cisco.com/c/en/us/support/routers/910-industrial-router/model.html |Cisco 900 Series Industrial Routers|   null    |Cisco 910 Industrial Router|/Support/Product Support/Routers/Cisco 900 Series Industrial Routers|1404766800|category |
+    |cisco.com|https://www.cisco.com/c/en/us/support/routers/910-industrial-router/model.html |Cisco 900 Series Industrial Routers|Routers    |   null                    |/Support/Product Support/Routers/Cisco 900 Series Industrial Routers|1404766800|model    |
+    |cisco.com|https://www.cisco.com/c/en/us/support/routers/910-industrial-router/model.html |Cisco 900 Series Industrial Routers|Routers    |Cisco 910 Industrial Router|  null                                                              |1404766800|path     |
+    |cisco.com|https://www.cisco.com/c/en/us/support/routers/910-industrial-router/model.html |Cisco 900 Series Industrial Routers|Routers    |Cisco 910 Industrial Router|/Support/Product Support/Routers/Cisco 900 Series Industrial Routers|   null   |release  |

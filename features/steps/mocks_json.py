@@ -1,5 +1,5 @@
-def generate_cisco_910_mock_json():
-  cisco_910_json_mock = {
+# JSON with the mocked values of the Cisco 910 for double check in tests
+cisco_910_json_mock = {
     "vendor": "cisco.com",
     "url": "https://www.cisco.com/c/en/us/support/routers/910-industrial-router/model.html",
     "series": "Cisco 900 Series Industrial Routers",
@@ -21,4 +21,3 @@ def generate_cisco_910_mock_json():
       }
     ]
   }
-  return cisco_910_json_mock
