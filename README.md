@@ -1,4 +1,4 @@
-# arcus-qa-project
+# behave-qa-project
 
 # Test Plan Excel
 
