@@ -24,7 +24,7 @@ It was used so I wouldn't need to worry with configuration as much as with the t
 
 ## Steps to Run
 
-* Install python v3.9.1 by downloading it on https://www.python.org/
+* Install python v3.8.0 or newer by downloading it on https://www.python.org/
 * If you use Windows, add python in your PATHs if needed
 * After Installing Python, write *"pip install -U behave"* on the terminal 
 * Again, if you use Windows, add the behave folder in your PATHs if needed
