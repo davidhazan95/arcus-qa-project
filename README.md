@@ -20,7 +20,7 @@ The other ones need some kind of development for manually test it, so they'll be
 
 The automation was made using Behave, which is a tool used for developing BDD in python, a substitute to cucumber.
 
-It was used so I wouldn't need to worry with configuration as much as with the tests itself.
+It was used so I wouldn't need to worry with configuration as much as with the tests itself. As I wanted to deliver this project ASAP.
 
 ## Steps to Run
 
